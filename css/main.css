@@ -4,15 +4,30 @@
 
     /*  HEADER  */
 
-
+header {
+    background-color: crimson;
+    color: white;
+    text-align: center;
+}
 
 /*  Navigation */
-
-a {
-  text-decoration: none;
-  color: #63f;
+.main-nav {
+    float: right;
+    margin-left: 1.75em;
+    text-decoration: none;
 }
-a:hover {
+
+.navigation {
+    display: inline-flex;
+}
+li {
+    margin: 0 5px
+}
+
+.main-nav a {
+  color: black;
+}
+.main-nav a:hover {
   color: gold;
 }
 
@@ -25,3 +40,9 @@ a:hover {
 
 
 /*ABOUT PAGE*/
+
+
+
+
+
+/*Media Queries*/
