@@ -5,41 +5,61 @@
     /*  HEADER  */
 
 header {
+    background: url('../img/dragon.jpg') no-repeat top center;
+    background-size: cover;
+    padding-bottom: 5rem;
+    margin-bottom: 3rem;
     background-color: crimson;
     color: white;
     text-align: center;
+    
 }
 
 /*  Navigation */
 .main-nav {
-    float: right;
-    margin-left: 1.75em;
+/*    background-color: crimson;*/
+    margin-left: 1.75rem;
     text-decoration: none;
-}
-
-.navigation {
-    display: inline-flex;
-}
-li {
-    margin: 0 5px
+    display: block;
+    list-style-type: none;
 }
 
 .main-nav a {
-  color: black;
-}
+    color: skyblue;
+
 .main-nav a:hover {
-  color: gold;
+    color: gold;
 }
 
 /* -- BODY -- */
+h1,
+h2,
+h3 {
+    text-align: center;
+}
 
+.column {
+    margin: 1.12rem;
+    display: flex;
+    flex-wrap: wrap;
+}
 
+.card {
+    margin-right: 3rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.card-img-top {
+    border: solid;
+    border-color: darkred;
+}
 
 /*CONTACT PAGE*/
 
 
 
-/*ABOUT PAGE*/
+/*TESTIMONIALS PAGE*/
 
 
 
