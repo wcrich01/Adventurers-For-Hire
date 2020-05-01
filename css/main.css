@@ -2,67 +2,193 @@
 
 /*MAIN PAGE*/
 
+/*
+* {
+    box-sizing: border-box;
+}
+*/
+
     /*  HEADER  */
 
 header {
-    background: url('../img/dragon.jpg') no-repeat top center;
+    background: crimson url('../img/dragon.jpg') no-repeat center;
     background-size: cover;
+    height: 20rem;
     padding-bottom: 5rem;
-    margin-bottom: 3rem;
-    background-color: crimson;
+    padding-top: 3rem;
     color: white;
+    border-bottom: solid crimson 8px;
+    font-size: 1.35rem;
+}
+
+.main-header {
+    float: left;
+    display: inline-block;
+    padding: 10px 0 0 20px;
+    justify-content: center;
     text-align: center;
-    
 }
 
 /*  Navigation */
-.main-nav {
-/*    background-color: crimson;*/
-    margin-left: 1.75rem;
+
+nav {
+    float: right;
+    padding-right: 1rem;
     text-decoration: none;
-    display: block;
-    list-style-type: none;
 }
 
-.main-nav a {
-    color: skyblue;
+nav li {
+    list-style-type: none;
+    font-size: 20px;
+}
 
-.main-nav a:hover {
+nav :first-child {
+    padding-left: 5px;
+}
+
+nav a {
+    color: white;
+}
+
+nav a:hover {
     color: gold;
 }
 
+
 /* -- BODY -- */
+
+body,
+.card {
+    background-color: palegoldenrod;
+}
+
+h1 {
+    font-family: fantasy;
+}
+
 h1,
 h2,
 h3 {
     text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    text-decoration: underline;
 }
 
-.column {
-    margin: 1.12rem;
+.contact-us {
+    color: darkred;
+}
+
+main p {
+    padding-left: 1rem;
+    padding-right: 1rem;
+/*    width: auto;*/
+}
+
+.column,
+main {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .card {
     margin-right: 3rem;
     margin-bottom: 1.5rem;
     text-align: center;
+    border: none;
 }
 
 .card-img-top {
     border: solid;
     border-color: darkred;
+    border-top-right-radius: 15%;
+    border-top-left-radius: 15%;
 }
 
-/*CONTACT PAGE*/
+.card-body {
+    background-color: gold;
+    border-bottom-right-radius: 15%;
+    border-bottom-left-radius: 15%;
+}
+
+/* FOOTER */
+footer {
+    text-align: right;
+    bottom: 0;
+    right: 0;
+    padding-right: 1.25rem;
+}
 
 
+/* SHOP PAGE*/
+
+.shop {
+    justify-content: center;
+    text-align: center;
+}
 
 /*TESTIMONIALS PAGE*/
 
-
+.testimonial {
+    justify-content: center;
+    text-align: center;
+}
 
 
 
 /*Media Queries*/
+
+/*Small devices (landscape phones, 576px and up)*/
+@media (max-width: 720px) {
+    nav li {
+        display: inline;
+        font-size: 15px;
+        background: darkred;
+        padding: .2rem .5rem .5rem .5rem;
+    }
+}
+
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 720px) {
+
+}
+
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 1080px) {
+    p {
+        text-align: center;
+        display: block;
+    }
+    h1 {
+        font-size: 64px;
+    }
+    h2 {
+        font-size: 54px;
+    }
+    h3 {
+        font-size: 42px;
+    }
+    p {
+        font-size: 24px;
+    }
+    header {
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
