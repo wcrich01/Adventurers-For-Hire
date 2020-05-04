@@ -26,57 +26,49 @@ var testimonials = [
     comment: "They certainly held up their end of the bargain. But did they need to cause such a big explosion in the sewers to get the job done? We were cleaning up refuse for a week."
   }
 ];
-//Adding testimonial from modal form.
-
-$("button.sendComment").submit(function() {
-    var testimonial = {};
-    var inputName = $('input[name="addName"]').val();
-    var inputTitle = $('input[name="addTitle"]').val();
-    var inputOpinion = $('input[name="addOpinion"]').val();
-    if (inputName && inputTitle && inputOpinion) {
-        $(this).serializeArray().map(function(data) {
-            testimonial[data.name] = data.value;
-        });
-    var lastComment = testimonials[Object.keys(testimonials).sort().pop()];
-    testimonials.id = lastComment.id + 1;
-
-    myButton(testimonial);
-    } else {
-        alert("All fields must have a valid value.");
-    }
-});
-
-function myButton(testimonial) {
-  testimonials.push(testimonial);
-  $('myTest').append(testimonial);
-}
-
-
-
 
 
 //Testimonials that are already stored and printed to the testimonial page
 
-var opinion = '';
-var testimonial;
 
 function print(opinion) {
     var myTestDiv = document.getElementById('myTest');
     myTestDiv.innerHTML = opinion;
 }
 
-for (var i = 0; i < testimonials.length; i += 1) {
+//Adding testimonial from modal form
+function buildTestimonialHtml(testimonials){
+    var opinion = '';
+    var testimonial;
+    for (var i = 0; i < testimonials.length; i += 1) {
     testimonial = testimonials[i];
     opinion += '<div class="list-group-item"><div class="d-flex w-100 justify-content-between"><h5 class="mb-1" >' + testimonial.commentTitle + '</h5></div>';
     opinion += '<p class="mb-1">' + testimonial.comment + '</p>';
     opinion += '<small class="text-muted">' + testimonial.name + '</small></div>';
+    }
+    return opinion;
 }
-print(opinion);
+print(buildTestimonialHtml(testimonials));
 
-
-//Added for own Amusement
+//Adding 
 $('.sendComment').click(function(){
+    var numberOfTestimonials = testimonials.length;
+    var addName = $('#addName').val();
+    var addTitle = $('#addTitle').val();
+    var addOpinion = $('#addOpinion').val();
+    
+    var newInput = {
+    id: numberOfTestimonials + 1,
+    name: addName,
+    commentTitle: addTitle,
+    comment: addOpinion
+    }
+    testimonials.push(newInput);
+    print(buildTestimonialHtml(testimonials));
     alert('Thanks for submiting a Testimonial!');
+    $('#addName').val('');
+    $('#addTitle').val('');
+    $('#addOpinion').val('');
 });
 
 

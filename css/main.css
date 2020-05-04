@@ -114,10 +114,14 @@ main {
 
 /* FOOTER */
 footer {
+    position: fixed;
     text-align: right;
     bottom: 0;
-    right: 0;
+    width: 100%;
     padding-right: 1.25rem;
+    background-color: crimson;
+    color: white;
+    border-top: solid darkred 5px;
 }
 
 
