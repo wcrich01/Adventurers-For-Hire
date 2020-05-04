@@ -31,7 +31,7 @@
         <nav>
             <ul>
                 <li>
-                    <a href="#" id="myModal">Contact Us</a>
+                    <a href="#" data-toggle="modal" data-target="#myModal">Contact Us</a>
                 </li>
                 <li>
                     <a href="shop.html" target="_blank">Our Shop</a>
@@ -45,6 +45,43 @@
     
     <!--End of the header -->
     
+    <!-- Modal -->
+    <!--Modal has been attached to both the "Contact Us" href anchor tags -->
+    
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModal" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Contact Us</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+                <div class="form-group">
+                    <label for="formGroupExampleInput">Your Name</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Name">
+                </div>
+                <div class="form-group">
+                    <label for="exampleFormControlInput1">Email address</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                </div>
+                <div class="form-group">
+                <label for="exampleFormControlTextarea1">Your Query</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary">Send</button>
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End of Modal -->
+    
     <!-- Beginning of the body content -->
     
     <main>
@@ -53,7 +90,7 @@
             <p>We live in a time where there are creatures causing havoc all over the world. The ruling powers can't deal with every goblin den or undead creature causing mayhem. So when in need reach hire the professionals.We are here to deal with any threat.</p>
         </div>
         <div>
-            <p><strong>There is no problem too big or too small. <a href="#" class="contact-us">Contact us</a> with the details and we will work for you!</strong></p>
+            <p><strong>There is no problem too big or too small. <a href="#" class="contact-us" data-toggle="modal" data-target="#myModal">Contact us</a> with the details and we will work for you!</strong></p>
         </div>
         <div>
             <h3>Our Role</h3>
@@ -120,7 +157,7 @@
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script link="script.js"></script>
+    <script src="script.js"></script>
     <!-- End of JavaScript Section -->
 </body>
 </html>

@@ -130,12 +130,29 @@ footer {
 
 /*TESTIMONIALS PAGE*/
 
-.testimonial {
-    justify-content: center;
-    text-align: center;
+.main-testimonials li {
+    list-style-type: none;
+    display: flex;
 }
 
+.list-group {
+    display: flex;
+    width: 50%;
+}
 
+.list-group-item {
+    border: solid crimson 5px;
+}
+
+.list-group-item p {
+    text-align: left;
+}
+
+.myButton {
+    background-color: darkolivegreen;
+    color: white;
+    margin-bottom: 1rem;
+}
 
 /*Media Queries*/
 
@@ -146,6 +163,10 @@ footer {
         font-size: 15px;
         background: darkred;
         padding: .2rem .5rem .5rem .5rem;
+    }
+    .list-group {
+        display: flex;
+        width: 100%;
     }
 }
 
@@ -175,6 +196,7 @@ footer {
     header {
     }
 }
+
 
 
 
