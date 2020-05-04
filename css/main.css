@@ -2,11 +2,9 @@
 
 /*MAIN PAGE*/
 
-/*
 * {
     box-sizing: border-box;
 }
-*/
 
     /*  HEADER  */
 
@@ -60,6 +58,10 @@ nav a:hover {
 body,
 .card {
     background-color: palegoldenrod;
+}
+
+.founders {
+    padding-bottom: 50px;
 }
 
 h1 {
@@ -134,14 +136,25 @@ footer {
 
 /*TESTIMONIALS PAGE*/
 
-.main-testimonials li {
-    list-style-type: none;
-    display: flex;
+.main-testimonials {
+    justify-content: center;
+}
+
+.OpinionAside {
+    float: right;
+    display: block;
+    width: 40%;
+}
+
+.asideHeader3 {
+    padding-top: 0;
 }
 
 .list-group {
-    display: flex;
+    float: left;
+    display: block;
     width: 50%;
+    padding-bottom: 50px;
 }
 
 .list-group-item {
@@ -169,10 +182,22 @@ footer {
         padding: .2rem .5rem .5rem .5rem;
     }
     .list-group {
-        display: flex;
+        float: right;
         width: 100%;
     }
+    .OpinionAside {
+        float: left;
+        width: 100%;
+        padding: 20px 15px 50px;
+        te
+    }
+    .OpinionAside h3 {
+        text-align: center;
+    }
 }
+
+
+
 
 /*Medium devices (tablets, 768px and up)*/
 @media (min-width: 720px) {
