@@ -204,6 +204,7 @@ footer {
     p {
         text-align: center;
         display: block;
+        font-size: 24px;
     }
     h1 {
         font-size: 64px;
@@ -214,7 +215,7 @@ footer {
     h3 {
         font-size: 42px;
     }
-    p {
+    nav a {
         font-size: 24px;
     }
 }
