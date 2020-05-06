@@ -3,7 +3,6 @@ $('#myModal').on('shown.bs.modal', function () {
   $('#myInput').trigger('focus')
 })
 
-//JS for adding testimonials
 
 //Testimonials already on the page.
 var testimonials = [
@@ -28,15 +27,13 @@ var testimonials = [
 ];
 
 
-//Testimonials that are already stored and printed to the testimonial page
-
 
 function print(opinion) {
     var myTestDiv = document.getElementById('myTest');
     myTestDiv.innerHTML = opinion;
 }
 
-//Adding testimonial from modal form
+//Function to build the testimonials
 function buildTestimonialHtml(testimonials){
     var opinion = '';
     var testimonial;
@@ -50,7 +47,7 @@ function buildTestimonialHtml(testimonials){
 }
 print(buildTestimonialHtml(testimonials));
 
-//Adding 
+//JS for adding testimonials
 $('.sendComment').click(function(){
     var numberOfTestimonials = testimonials.length;
     var addName = $('#addName').val();

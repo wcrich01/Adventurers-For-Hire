@@ -81,6 +81,10 @@ h3 {
     color: darkred;
 }
 
+.contact-us:hover {
+    color: blue;
+}
+
 main p {
     padding-left: 1rem;
     padding-right: 1rem;
@@ -138,6 +142,7 @@ footer {
 
 .main-testimonials {
     justify-content: center;
+    padding-left: 1rem;
 }
 
 .OpinionAside {
@@ -161,12 +166,6 @@ footer {
     border: solid crimson 5px;
 }
 
-/*
-.list-group-item p {
-    text-align: left;
-}
-*/
-
 .myButton {
     background-color: darkolivegreen;
     color: white;
@@ -182,6 +181,9 @@ footer {
         font-size: 15px;
         background: darkred;
         padding: .2rem .5rem .5rem .5rem;
+    }
+    .main-testimonials {
+        padding-right: 1rem;
     }
     .list-group {
         float: right;
